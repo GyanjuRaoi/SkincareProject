@@ -1,0 +1,377 @@
+{% extends "base/base.html" %}
+
+{% block content %}
+<section class="home" id="home">
+ 
+
+    <div class="slide active" style="background-color: rgb(86, 117, 131); background-size:cover;
+    background-position: center;">
+    <div class="homeimage">
+        <div class="image-container">
+            <img src="https://m.media-amazon.com/images/I/61ZDUdnsIML._SL1500_.jpg" alt="image" width="406" height="590">
+        </div>
+    </div>
+    <div class="content">
+        <span>Natural <br> Skincare</span>
+        <span> The best care youth secret</span>
+        <h3>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>
+            sed do eiusmod tempor farhan ut labore et dolore magna aliqua.<br>
+           Lorem, ipsum dolor </h3>
+         <a href="signup.html" class="btn">View Now</a>
+    </div>
+    </div>
+
+    <div class="slide" style="background:url(Images\Screenshot.png)no-repeat; background-size:cover;
+    background-position: center;">
+    <div class="content">
+        <span>Natural  <br> Skincare</span>
+        <span> The best care youth secret</span>
+        <h3>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>
+            sed do eiusmod tempor farhan ut labore et dolore magna aliqua.<br>
+           Lorem, ipsum dolor </h3>
+         <a href="#" class="btn">read more</a>
+    </div>
+    </div>
+
+    <div class="slide" style="background:url(img/home-bg-3.jpg) no-repeat; background-size:cover;
+    background-position: center;">
+    <div class="content">
+        <span>Natural <br> Skincare</span>
+        <span> The best care youth secret</span>
+        <h3>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>
+            sed do eiusmod tempor farhan ut labore et dolore magna aliqua.<br>
+           Lorem, ipsum dolor </h3>
+         <a href="#" class="btn">read more</a>
+    </div>
+    </div>
+
+    <div id="next-slide" onclick="next()" class="fas fa-angle-right"></div>
+    <div id="prev-slide" onclick="prev()" class="fas fa-angle-left"></div>
+
+</section>
+
+<section class="category">
+    <div class="box-container">
+
+        <a href="#" class="box">
+            <h3>Beaute</h3>
+        </a>
+
+        <a href="#" class="box">
+            <h3>Skin Cruticals</h3>
+        </a>
+
+        <a href="#" class="box">
+            <h3>Cetaphile</h3>
+        </a>
+
+        <a href="#" class="box">
+            <h3>Beaute</h3>
+        </a>
+
+        <a href="#" class="box">
+            <h3>Anew</h3>
+        </a>
+
+    </div>
+</section>
+
+<section class="featured" id="features">
+    <div class="content">
+            <h1>Featured Products</h1>
+            <p>Featured Products</p>
+    </div>
+</section>
+
+<section class="shop" id="shop">
+    <div class="box-container">
+
+        <div class="box">
+            <div class="img">
+                <img decoding="async" src="https://www.palmolive.ph/content/dam/cp-sites/personal-care/palmolive-eu/en_ph/images/hair-care/ultra-smooth-new-en-ph.jpg">
+                <div class="icons">
+                    <a href="#" class="fas fa-eye"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3> Hair Shampoo</h3>
+                <div class="price">$40-<span>$200.99</span></div>
+                <a href="#" class="btn">Read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="img">
+                <img decoding="async" src="https://i.pinimg.com/564x/bf/3e/48/bf3e486e5f7b83498f4aaddfca7fb692.jpg">
+                <div class="icons">
+                    <a href="#" class="fas fa-eye"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Rice Cleanser</h3>
+                <div class="price">$40-<span>$200.99</span></div>
+                <a href="#" class="btn">Read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="img">
+                <img decoding="async" src="https://i.pinimg.com/564x/74/7f/ea/747fea86e5500913228409bcc0198c96.jpg">
+                <div class="icons">
+                    <a href="#" class="fas fa-eye"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Face Cleanser</h3>
+                <div class="price">$40-<span>$200.99</span></div>
+                <a href="#" class="btn">Read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="img">
+                <img decoding="async" src="https://i.pinimg.com/564x/1f/57/6d/1f576d517e613f24239de6c798de81b0.jpg">
+                <div class="icons">
+                    <a href="#" class="fas fa-eye"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Moisturizer</h3>
+                <div class="price">$40-<span>$200.99</span></div>
+                <a href="#" class="btn">Read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="img">
+                <img decoding="async" src="https://i.pinimg.com/564x/11/71/0c/11710c037ff0d0c17a4b777c94ea0158.jpg">
+                <div class="icons">
+                    <a href="#" class="fas fa-eye"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Hand Cream</h3>
+                <div class="price">$40-<span>$200.99</span></div>
+                <a href="#" class="btn">Read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="img">
+                <img decoding="async" src="https://i.pinimg.com/564x/b8/14/f4/b814f47aaec99e24579cff379bc2eb30.jpg">
+                <div class="icons">
+                    <a href="#" class="fas fa-eye"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Skin Ceuticals</h3>
+                <div class="price">$40-<span>$200.99</span></div>
+                <a href="#" class="btn">Read more</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+<section class="Categories" id="Categories">
+    <div class="content">
+            <h1>Learn By Categories</h1>
+            <p>Browse Our Featured Categories</p>
+    </div>
+</section>
+
+
+<div class="back_ground">
+
+    <div class="inner_background">
+
+        <div class="care">
+            <p>hair care</p>
+            <p>Make UP</p>
+            <p>Skin care</p>
+            <p>Bath & Body</p>
+        </div>
+    
+        <img src="https://i.pinimg.com/564x/b2/45/4b/b2454b59a84fb80780aeda4a1493bd41.jpg">
+    </div>
+
+   
+</div>
+
+
+<section class="gallery" id="gallery">
+    <h1>Our Categories</h1>
+    <p>Browse the collection of our tab products.</p>
+    <div class="box-container">
+
+        <div class="box">
+            <img decoding="async" src="https://i.pinimg.com/736x/03/79/24/037924da75d8346c319e93518eda1a76.jpg">
+            <div class="content">
+                <h3>Blush</h3>
+                <p>Lorem ipsum dolor sit amet consectetur</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img decoding="async" src="https://i.pinimg.com/564x/c6/5d/55/c65d550aeb02951956723200ecbd799a.jpg">
+            <div class="content">
+                <h3>EyeShadow</h3>
+                <p>Lorem ipsum dolor sit amet consectetur</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img decoding="async" src="https://i.pinimg.com/564x/6c/7f/d7/6c7fd7ba457a4c3eefc1236ac15427e1.jpg">
+            <div class="content">
+                <h3>lips Stick</h3>
+                <p>Lorem ipsum dolor sit amet consectetur</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img decoding="async" src="https://i.pinimg.com/564x/45/af/ea/45afea12dac0233f0eb31e76ae4ff531.jpg">
+            <div class="content">
+                <h3>Face Toner</h3>
+                <p>Lorem ipsum dolor sit amet consectetur</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img decoding="async" src="https://i.pinimg.com/564x/b7/50/47/b750476ec8e534e30f0551cae6de10d1.jpg">
+            <div class="content">
+                <h3>Face Serum</h3>
+                <p>Lorem ipsum dolor sit amet consectetur</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img decoding="async" src="https://i.pinimg.com/564x/c4/b7/92/c4b792adfd2ca0070ab1dfeeee010b9f.jpg">
+            <div class="content">
+                <h3>Hair Masks</h3>
+                <p>Lorem ipsum dolor sit amet consectetur</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+<section class="message" id="message">
+    <form action="">
+        <h3>get in <span>touch</span></h3>
+        <input type="text" placeholder="Full name" class="box">
+        <input type="email" placeholder="Email" class="box">
+        <input type="number" placeholder="Phone" class="box">
+        <textarea placeholder="Message" class="box" cols="30" rows="10"></textarea>
+        <input type="submit" value="send message" class="btn">
+    </form>
+</section>
+
+
+
+
+
+<section class="blogs" id="blogs">
+    <h1 class="heading">From our <span>blogs</span></h1>
+    <p>There are latest blog posts</p>
+    <div class="box-container">
+
+        <div class="box">
+            <div class="img">
+                <img decoding="async" src="https://i.pinimg.com/564x/de/9f/98/de9f98bf37546b1284d07260780c37f5.jpg" alt="">
+            </div>
+            <div class="content">
+                <div class="date">
+                <h3>12</h3>
+                <span>jan</span>
+            </div>
+            <a href="#" class="user"><i class="fas fa-user"></i> by admin</a>
+            <a href="#" class="title"> blog title goes here...</a>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="img">
+            <img decoding="async" src="https://i.pinimg.com/564x/e4/5b/58/e45b58b80bd93424854afd15463df7ed.jpg" alt="">
+        </div>
+        <div class="content">
+            <div class="date">
+            <h3>19</h3>
+            <span>feb</span>
+        </div>
+        <a href="#" class="user"><i class="fas fa-user"></i> by admin</a>
+        <a href="#" class="title"> blog title goes here...</a>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        <a href="#" class="btn">read more</a>
+    </div>
+</div>
+
+<div class="box">
+    <div class="img">
+        <img decoding="async" src="https://i.pinimg.com/564x/59/28/a8/5928a8025f1d656d0ca4d835bb6aa87d.jpg" alt="">
+    </div>
+    <div class="content">
+        <div class="date">
+        <h3>02</h3>
+        <span>Aug</span>
+    </div>
+    <a href="#" class="user"><i class="fas fa-user"></i> by admin</a>
+    <a href="#" class="title"> blog title goes here...</a>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+    <a href="#" class="btn">read more</a>
+</div>
+</div>
+
+
+    </div>
+</section>
+
+<section class="services">
+
+    <div class="box1">
+        <img decoding="async" src="img/icon-1.png" alt="">
+        <h3>100% original</h3>
+        <p>Original only, for the original you</p>
+    </div>
+
+    <div class="box2">
+        <img decoding="async" src="img/icon-2.png" alt="">
+        <h3>Skincare Adwards</h3>
+        <p>Earn 5% skincare rewards points on every purchase</p>
+    </div>
+
+    <div class="box3">
+        <img decoding="async" src="img/icon-3.png" alt="">
+        <h3>50+ Brands</h3>
+        <p>Wide range of productsto choose from</p>
+    </div>
+
+</section>
+
+
+{% endblock content %}

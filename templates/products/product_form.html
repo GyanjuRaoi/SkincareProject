@@ -1,0 +1,17 @@
+{% extends "base/home_base.html" %}
+
+{%block content%}
+    <div class ="content-section">
+        <form method = 'POST' enctype="multipart/form-data">
+            <a class="mr-2" href="{% url 'home_page' %}" style="color: rgb(107, 107, 250); text-decoration: underline;"><i class="fa-solid fa-turn-left"></i> Return</a>
+            {% csrf_token %}
+            <legend class="border-bottom mb-4" style="margin-bottom: 10px; font-weight: bold; ">product</legend>
+            <fieldset class = "form-group">
+                {{ form.as_div}}
+            </fieldset>
+            <div class = "form-group">
+                <button class="btn btn-outline-info" type ="submit">Add</button>
+            </div> 
+        </form>
+    </div>
+{% endblock content %}

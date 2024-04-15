@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <link rel="stylesheet" href="{%static 'stylesheet/home.css' %}">
+</head>
+<body>
+    <header>
+        <div class="container1">
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="logo">
+            
+            <a href="{% url 'landing_page' %}"><h4 style="background-color: black;  border-radius: 11px;  padding: 6px; color:white ">Home</h4></a>
+            {% if user.is_authenticated %}
+            
+            <a style="font-weight: bold;" href="{% url 'create_product' %}">Create</a>
+            
+            {% endif %}
+
+            <input type="text"  style="width: 600px; border-radius:11px; border-color:black" placeholder="What are you looking for">
+            <div class="icons">
+                <a href="#" class="fas fa-bell"></a>
+                <a href="#" class="fas fa-message"></a>
+                <a href="#" class="fas fa-user-circle"></a>
+                <a href="#" class="fas fa-chevron-circle-down"></a>
+            </div>
+
+
+        </div>
+    </div>
+    <main>
+{% block content %}{% endblock content %}
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Company Name</p>
+        </div>
+    </footer>
+</body>
+</html>

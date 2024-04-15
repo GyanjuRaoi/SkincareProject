@@ -1,0 +1,24 @@
+{% extends "base/base.html" %}
+{% block content %}
+
+    {% for blog in blogs  %}
+
+        <div class="blog_heading"> 
+            <h1>{{ blog.title }}</h1>
+        </div>
+
+        <div class="b_img">
+            <img src="{{ blog.blog_image.url }}">
+        </div>
+
+        <div class="Para_blog">
+            <p>
+                {{ blog.content }}
+                
+            </p>
+        </div>
+
+    {% endfor %}
+
+{% endblock content %}
+

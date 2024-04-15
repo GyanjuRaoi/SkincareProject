@@ -1,0 +1,19 @@
+{% extends "base/home_base.html" %}
+
+{% block content %}
+
+<div class ="content-section">
+    <form method = 'POST'>
+        {% csrf_token %}
+        <fieldset class = "form-group">
+            <legend class="border-bottom mb-4">Delete Post</legend>
+            <h2> Are you sure want to delete the post "{{object.name}}"</h2>
+        </fieldset>
+        <div class = "form-group">
+            <button class="btn btn-outline-danger" type ="submit">Yes</button>
+            <a class="btn btn-sm mt-1 mb-1 btn-update" href="{% url 'detail_product' object.id %}">N0</a>
+        </div> 
+    </form>
+</div>
+
+{% endblock content %}

@@ -1,0 +1,21 @@
+{% extends "base/home_base.html" %}
+{%block content%}
+    <article class="media content-section">
+        <div class="media-body">
+        <div class="article-metadata">
+            <a class="mr-2" href="{% url 'home_page' %}" style="color: rgb(107, 107, 250); text-decoration: underline; margin-bottom: 10px;"><i class="fa-solid fa-turn-left"></i> Return</a>
+            {% if product.user == user %}
+            <div style="margin-top: 10px;">
+                <a class ="btn btn-sm mt-1 mb-1 btn-update" href="{% url 'update_product' product.id %}" >Update</a>
+                <a class ="btn btn-sm mt-1 mb-1 btn-delete" href="{% url 'delete_product' product.id %}" >Delete</a>
+            </div>
+            {% endif %}
+        </div>
+        <h2 class="article-title">{{ product.name }}</h2>
+        <p class="article-content">{{ product.description }}</p>
+        <div class="img">
+            <img decoding="async" src="{{ product.productImage.url }}">
+          </div>
+        </div>
+    </article>
+{% endblock content%}

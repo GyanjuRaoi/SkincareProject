@@ -1,0 +1,23 @@
+<section class="shop" id="shop">
+  
+  <div class="box-container">
+    
+    {% for product in products %}
+    <a href="{% url 'detail_product' product.id %}">
+    <div class="box">
+      <div class="img">
+        <img decoding="async" src="{{ product.productImage.url }}">
+      </div>
+      <div class="content">
+        <h7> <strong>{{ product.name }}</strong></h7>
+      </div>
+      <div class="userpost">
+        <img src="https://wallpapercave.com/wp/wp5929579.jpg">
+        <h5 style="color: rgb(86, 117, 131);">{{ product.user.username }}</h5>
+      </div>
+      </div>
+    </a>
+      {% endfor %}
+    </div>
+</section>
+

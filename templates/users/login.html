@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f1f1;
+    }
+
+    .container {
+      width: 300px;
+      margin: 0 auto;
+      margin-top: 100px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      border: 1px solid #ccc;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 8px;
+      background-color:  rgb(207, 203, 203);
+      border-radius: 20px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color:  rgb(86, 117, 131);
+      color: #fff;
+      border: none;
+      border-radius: 20px;
+      margin-top : 20px;
+      cursor: pointer;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Added box-shadow */
+    }
+
+
+    h3, h4 {
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Login</h2>
+    <form method='post'>
+      {% csrf_token %}
+      {% for message in messages %}
+      
+      <div id='msg'>{{message}}:</div>
+
+      {% endfor %}
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required>
+
+      <input type="submit" value="Login">
+
+      <h3>Forget your password ? </h3>
+      <a href="{% url 'signup_user' %}"><h4>Create account</h4></a>
+    </form>
+  </div>
+  <script>
+    const message = document.getElementById('msg');
+
+    setTimeout(function(){
+      message.innerHTML = " ";
+    }, 4000)
+  </script>
+</body>
+</html>

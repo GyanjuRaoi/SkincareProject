@@ -1,0 +1,74 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="{%static 'stylesheet/signup.css' %}">
+</head>
+<body>
+    
+
+  <div class="w-register">
+    <div class='left_reg'>
+      <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYXBiMDJoNmNhcndnM3E4ZzRmZzEwNmo2OXQ2a3FmbnN4ejQyNDVzdiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/U840Ymq0KdevKhKpZH/giphy.gif" alt="register-img" />
+    </div>
+
+    <div class='right_reg'>
+     
+      <div class='sign'>
+        
+        <form method="POST" class='register' id='register'>
+          {% csrf_token %}
+          <div class="r_input">
+            <label>Username:</label>
+            <input    
+              type="text"
+              placeholder='Enter Your Name'
+              name="username"
+          
+            
+            />
+          </div>
+          <div class="r_input">
+            <label>Email:</label>
+            <input
+              placeholder='Enter Your email'
+              type="email"
+              name="email"
+            
+            />
+          </div>
+          <div class="r_input">
+            <label>Password:</label>
+            <input
+              placeholder='Enter Password'
+              type="password"
+              name="password"
+             
+            />
+          </div>
+          <div class="r_input">
+            <label>Confirm Password:</label>
+            <input
+              placeholder='Confirm Password'
+              type="password"
+              name="ConfirmPassword"
+             
+            />
+          </div>
+                           
+          <button type="submit" class="sign_btn">Sign Up</button>
+                        
+            <button class='already'>
+                <a href="{% url "login_user" %}">  Already have an account?</a></button>
+          
+        </form>
+      </div>
+
+      
+    </div>
+  </div>
+</body>
+</html>
